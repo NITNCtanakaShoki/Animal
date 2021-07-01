@@ -1,8 +1,10 @@
+package main;
+
 public class MigrantBird extends Bird {
-    MigrantBird( int vitality) {
+    public MigrantBird( int vitality) {
         super(vitality);
     }
-    void sleep() {
+    public void sleep() {
         movePosition(3);
     }
 }

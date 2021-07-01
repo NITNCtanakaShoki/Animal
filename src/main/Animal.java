@@ -1,28 +1,30 @@
+package main;
+
 public class Animal {
     private int position;
     private int currentVitality;
     private final int maxVitality;
 
-    Animal( int vitality ) {
+    public Animal( int vitality ) {
         position = 0;
         currentVitality = vitality;
         maxVitality = vitality;
     }
 
-    void movePosition( int n ) {
+    public void movePosition( int n ) {
         position += n;
     }
 
-    void useVitality( int n ) {
+    public void useVitality( int n ) {
         currentVitality -= n;
     }
 
-    void walk() {
+    public void walk() {
         movePosition(1);
         useVitality(1);
     }
 
-    void eat() {
+    public void eat() {
         currentVitality = maxVitality;
     }
 
