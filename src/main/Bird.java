@@ -1,8 +1,10 @@
+package main;
+
 public class Bird extends Animal {
-    Bird( int vitality ) {
+    public Bird( int vitality ) {
         super(vitality);
     }
-    void fly() {
+    public void fly() {
         movePosition(3);
         useVitality(1);
     }
