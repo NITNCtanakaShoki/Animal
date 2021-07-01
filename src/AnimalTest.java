@@ -1,6 +1,3 @@
-package test;
-
-import main.Animal;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
